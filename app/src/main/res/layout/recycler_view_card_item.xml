@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        card_view:cardElevation="0.02dp"
+        android:layout_marginBottom="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingBottom="16dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:id="@+id/prof_icon"
+                android:src="@mipmap/ic_silent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prof_name"
+                android:text="Test"
+                android:layout_toRightOf="@+id/prof_icon"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:textSize="30sp"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/repeat"
+                android:text="ON Sun"
+                android:layout_toRightOf="@+id/prof_icon"
+                android:layout_below="@+id/at"
+                android:textColor="@color/colorPrimary"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/at"
+                android:text="10:00 AM"
+                android:layout_toRightOf="@+id/prof_icon"
+                android:layout_below="@+id/prof_name"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/s_active"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:id="@+id/iv_edit"
+                android:src="@mipmap/ic_card_edit"
+                android:layout_toLeftOf="@+id/iv_delete"
+                android:layout_alignParentTop="true"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:id="@+id/iv_delete"
+                android:src="@mipmap/ic_card_delete"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+               />
+            <!--<TextView-->
+                <!--android:id="@+id/tv_context"-->
+                <!--android:clickable="true"-->
+                <!--android:layout_marginTop="-5dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:background="@drawable/ic_more_vert_black_16dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_gravity="right" />-->
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
